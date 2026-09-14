@@ -19,7 +19,7 @@ jobs:
       !contains(github.ref_name, 'alpha') &&
       !contains(github.ref_name, 'beta') &&
       !contains(github.ref_name, '+')
-    uses: ianhubnet/.github/.github/workflows/package.yml@main
+    uses: ciskeleton/.github/.github/workflows/package.yml@main
     with:
       name: ${{ vars.CSK_NAME }}
       type: ${{ vars.CSK_TYPE }}
