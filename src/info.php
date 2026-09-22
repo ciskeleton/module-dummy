@@ -19,15 +19,19 @@ return [
 	'description' => 'This module is here to fill some dashboard pages with dummy content. Delete it to remove all its data.',
 	'version' => '0.0.1',
 	'version_id' => 1,
-	'author' => Platform::AUTHOR,
-	'author_uri' => Platform::AUTHOR_URL,
-	'author_email' => Platform::AUTHOR_EMAIL,
-	'tags' => 'csk, codeigniter, skeleton, dummy',
+	'repository' => 'https://github.com/ciskeleton/module-dummy',
 
 	// Presentation.
 	'icon' => 'flask',
 	'icon_fg' => '#ffffff',
 	'icon_bg' => '#6c757d',
+
+	// Author.
+	'author' => [
+		'name' => Platform::AUTHOR,
+		'url' => Platform::AUTHOR_URL,
+		'email' => Platform::AUTHOR_EMAIL,
+	],
 
 	// Translations.
 	'translations' => [
