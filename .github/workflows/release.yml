@@ -23,4 +23,5 @@ jobs:
     with:
       name: ${{ vars.CSK_NAME }}
       type: ${{ vars.CSK_TYPE }}
+      dispatch: true
     secrets: inherit
