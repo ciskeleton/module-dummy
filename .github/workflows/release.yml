@@ -1,4 +1,4 @@
-name: Release and Dispatch
+name: Release
 run-name: Release ${{ github.ref_name }} by @${{ github.actor }}
 
 on:
@@ -7,10 +7,6 @@ on:
       - '*.*.*'
       - '!*alpha*'
       - '!*beta*'
-
-permissions:
-  contents: write
-  actions: write
 
 jobs:
   release:
@@ -23,5 +19,3 @@ jobs:
     with:
       name: ${{ vars.CSK_NAME }}
       type: ${{ vars.CSK_TYPE }}
-      dispatch: true
-    secrets: inherit
